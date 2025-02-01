@@ -20,8 +20,10 @@ en lo relacionado con conceptos tales como condicionales,arrays,funnciones,etc
 * JavaScript.
 
 <h2>Instalación</h2>
-* Clonar el repositorio
 
-  [https://github.com/Oracle-Next-Education/challenge-amigo-secreto_esp/archive/refs/heads/main.zip](URL).
+* Descargar el archivo donde se encuentra el repositorio base. 
+* Clonar el repositorio en github.
+
+  
 
 
