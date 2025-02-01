@@ -21,7 +21,8 @@ en lo relacionado con conceptos tales como condicionales,arrays,funnciones,etc
 
 <h2>Instalación</h2>
 
-* Descargar el archivo donde se encuentra el repositorio base. 
+* Descargar el archivo donde se encuentra el repositorio base.
+   * (https://github.com/mapulgarin2/challenge-amigo-secreto_esp-main/blob/main/challenge-amigo-secreto_esp-main.zip) 
 * Clonar el repositorio en github.
 
   
