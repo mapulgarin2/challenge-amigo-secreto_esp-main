@@ -11,19 +11,23 @@ function agregarAmigo(){
         alert("Po favor ingrese un nombre valido");
     }else{
         amigos.push(nombre);
-        nombre = document.getElementById("amigo").value = "";
-        listaOrdenada.innerHTML = '';
-        
-        amigos.forEach(nombre =>{
-            let li = document.createElement("li");
-            li.textContent = nombre
-            listaOrdenada.appendChild(li); 
-            
-        });
+        actualizarListaAmigos();
         console.log(amigos);
-          
-
+        
+        
         
     }
 }
-agregarAmigo();
+
+//Funcion para actualizar la lista de los amigos
+function actualizarListaAmigos(){
+    nombre = document.getElementById("amigo").value = "";
+    listaOrdenada.innerHTML = '';
+    
+    amigos.forEach(nombre =>{
+        let li = document.createElement("li");
+        li.textContent = nombre
+        listaOrdenada.appendChild(li); 
+        
+    });    
+}
