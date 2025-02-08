@@ -2,7 +2,8 @@
 //Crear una lista donde se ingresen los nombre
 let amigos = [];
 let listaOrdenada = document.getElementById("listaAmigos");
-let mensajeAmigoSecreto = document.getElementById("resultado");
+let mensajeAmigoSecreto = document.getElementById("resultado")
+let campoTexto = document.getElementById("amigo");
 //Funcion para agregar los nombres en una lista.
 function agregarAmigo(){
     let nombre = document.getElementById("amigo").value;;
@@ -11,6 +12,8 @@ function agregarAmigo(){
     }else{
         amigos.push(nombre);
         actualizarListaAmigos();
+        //
+        campoTexto.focus();
         console.log(amigos);      
     }
 }
@@ -18,6 +21,8 @@ function agregarAmigo(){
 function actualizarListaAmigos(){
     nombre = document.getElementById("amigo").value = "";
     listaOrdenada.innerHTML = '';
+    mostrarListaOrdenada();
+    
     
     amigos.forEach(nombre =>{
         let li = document.createElement("li");
@@ -35,5 +40,19 @@ function sortearAmigo(){
     console.log(indicegenerado);
     console.log(amigos[indicegenerado]);
     mensajeAmigoSecreto.innerHTML = `El amigo secreto sorteado es: ${amigos[indicegenerado]}`;
-    listaOrdenada.setAttribute('disable',true);
+    ocultarListaOrdenada();
+    // limpia la lista
+    amigos = [];
+}
+
+//funcion que aculta la lista de amigos y aparece el mensaje del resultado del sorteo.
+function ocultarListaOrdenada(){
+    listaOrdenada.style.display= 'none';
+    mensajeAmigoSecreto.style.display= "block";
+}
+
+//funcion que aparece la lista de los amigos y desaparece el mensaje del sorteo.
+function mostrarListaOrdenada(){
+    listaOrdenada.style.display= 'block';
+    mensajeAmigoSecreto.style.display= "none";
 }
