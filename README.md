@@ -26,6 +26,14 @@ en lo relacionado con conceptos tales como condicionales,arrays,funciones,etc
 * Clonar el repositorio en github.
 * Acceder a la carpeta donde descargamos en archivo y abrir el editor de texto.
 
+<h2>Autores</h2>
+<sub>Mauricio Pulgarin[https://github.com/mapulgarin2]</sub><img src="https://avatars.githubusercontent.com/u/111947748?v=4" width=115><br><sub>Alura Latam[https://www.aluracursos.com/]</sub><img src="https://www.aluracursos.com/assets/img/home/alura-logo.1730889068.svg" width=115>
+| :---: | :---: | :---: |
+
+
+
+
+
   
 
   
